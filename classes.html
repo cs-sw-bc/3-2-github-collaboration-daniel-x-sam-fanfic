@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - Serenity Yoga Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">🧘‍♀️ Serenity Yoga</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html" class="active">Classes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Classes</h1>
+            <p>Discover the perfect practice for your journey</p>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes-section">
+        <div class="container">
+            <div class="classes-grid">
+                <!-- Class Card 1 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">🌅</span>
+                        <span class="class-level beginner">Beginner</span>
+                    </div>
+                    <h3>Hatha Yoga</h3>
+                    <p>Perfect for beginners, this gentle practice focuses on basic poses and breathing techniques to build strength and flexibility.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 60 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Mon, Wed, Fri - 9:00 AM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Hatha Yoga')">Book Class</button>
+                </div>
+
+                <!-- Class Card 2 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">🔥</span>
+                        <span class="class-level intermediate">Intermediate</span>
+                    </div>
+                    <h3>Vinyasa Flow</h3>
+                    <p>Dynamic sequences that link breath with movement. Build heat, strength, and flexibility in this energizing practice.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 75 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Tue, Thu - 6:00 PM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Vinyasa Flow')">Book Class</button>
+                </div>
+
+                <!-- Class Card 3 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">💪</span>
+                        <span class="class-level advanced">Advanced</span>
+                    </div>
+                    <h3>Power Yoga</h3>
+                    <p>Intense, fitness-based approach to vinyasa-style yoga. Challenge yourself with strength-building poses and cardio elements.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 90 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Sat - 10:00 AM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Power Yoga')">Book Class</button>
+                </div>
+
+                <!-- Class Card 4 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">🌙</span>
+                        <span class="class-level beginner">All Levels</span>
+                    </div>
+                    <h3>Restorative Yoga</h3>
+                    <p>Slow-paced class with long holds in gentle poses. Perfect for stress relief, deep relaxation, and healing.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 60 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Wed, Sun - 7:00 PM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Restorative Yoga')">Book Class</button>
+                </div>
+
+                <!-- Class Card 5 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">🧘‍♂️</span>
+                        <span class="class-level intermediate">Intermediate</span>
+                    </div>
+                    <h3>Yin Yoga</h3>
+                    <p>Deep stretching practice targeting connective tissues. Hold poses for longer periods to increase flexibility and find stillness.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 75 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Fri - 6:30 PM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Yin Yoga')">Book Class</button>
+                </div>
+
+                <!-- Class Card 6 -->
+                <div class="class-card">
+                    <div class="class-header">
+                        <span class="class-icon">🧠</span>
+                        <span class="class-level beginner">All Levels</span>
+                    </div>
+                    <h3>Meditation & Breathwork</h3>
+                    <p>Cultivate mindfulness and inner peace through guided meditation and pranayama breathing techniques.</p>
+                    <div class="class-details">
+                        <div class="detail">
+                            <strong>Duration:</strong> 45 minutes
+                        </div>
+                        <div class="detail">
+                            <strong>Schedule:</strong> Daily - 7:00 AM
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showBookingModal('Meditation & Breathwork')">Book Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Membership Options</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Drop-In</h3>
+                    <div class="price">$20</div>
+                    <p>Per Class</p>
+                    <ul>
+                        <li>✓ Single class access</li>
+                        <li>✓ No commitment</li>
+                        <li>✓ All class types</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <span class="badge">Popular</span>
+                    <h3>Monthly</h3>
+                    <div class="price">$99</div>
+                    <p>Per Month</p>
+                    <ul>
+                        <li>✓ Unlimited classes</li>
+                        <li>✓ Priority booking</li>
+                        <li>✓ Free workshop access</li>
+                        <li>✓ 10% retail discount</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Class Pack</h3>
+                    <div class="price">$150</div>
+                    <p>10 Classes</p>
+                    <ul>
+                        <li>✓ Valid for 3 months</li>
+                        <li>✓ Flexible scheduling</li>
+                        <li>✓ All class types</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Your Class</h2>
+            <p id="selectedClass"></p>
+            <p>Please <a href="contact.html">contact us</a> to complete your booking or sign up for a membership.</p>
+            <button class="btn btn-primary" onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Serenity Yoga</h3>
+                    <p>Your sanctuary for wellness and peace.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 123 Wellness Way, Peaceful City</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ hello@serenityyoga.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Serenity Yoga Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
